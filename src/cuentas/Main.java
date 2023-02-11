@@ -26,12 +26,5 @@ public class Main {
         } catch (Exception e) {
             System.out.print("Fallo al ingresar");
         }
-        
-        try {
-            System.out.println("Ingreso en cuenta");
-            cuenta1.ingresar(695);
-        } catch (Exception e) {
-            System.out.print("Fallo al ingresar");
-        }
     }
 }
