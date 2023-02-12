@@ -1,5 +1,10 @@
 package cuentas;
 
+/*
+ * Calse para almacenar datos de la cuenta bancaria
+ * @author Natxo
+*/
+
 public class CCuenta {
 
 
