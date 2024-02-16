@@ -1,8 +1,9 @@
 package cuentas;
 
 /*
- * Calse para almacenar datos de la cuenta bancaria
+ * 
  * @author Natxo
+ * Clase para almacenar datos de la cuenta bancaria
 */
 
 public class CCuenta {
@@ -13,10 +14,21 @@ public class CCuenta {
     private double saldo;
     private double tipoInterés;
 
+    /**
+     * Constructor por defecto
+     */
     public CCuenta()
     {
     }
 
+    /**
+     * Constructor con todos los valores
+     * @param nom
+     * @param cue
+     * @param sal
+     * @param tipo 
+     */
+    
     public CCuenta(String nom, String cue, double sal, double tipo)
     {
         nombre =nom;
@@ -24,11 +36,20 @@ public class CCuenta {
         saldo=sal;
     }
 
+    /**
+     * Obtiene el saldo de la cuenta
+     * @return 
+     */
     public double estado()
     {
         return getSaldo();
     }
 
+    /**
+     * Ingresa cantidad a la cuenta, la cantidad debe ser positiva
+     * @param cantidad
+     * @throws Exception 
+     */
     public void ingresar(double cantidad) throws Exception
     {
         if (cantidad<0)
@@ -36,6 +57,12 @@ public class CCuenta {
         setSaldo(getSaldo() + cantidad);
     }
 
+    /**
+     * Retira cantidad de la cuenta, la cantidad debe ser positiva,
+     * debe haber suficiente saldo
+     * @param cantidad
+     * @throws Exception 
+     */
     public void retirar(double cantidad) throws Exception
     {
         if (cantidad <= 0)
